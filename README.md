@@ -1,4 +1,4 @@
-# Librarymanagement With the BARCODE SCANNER
+# Library management With the BARCODE SCANNER
 
 This is an Institution Library Application Android Application which cover all the features that helped to librarian and the User in the Library management systems With the help of the Aws Cloud 
 
