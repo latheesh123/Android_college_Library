@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.library.book.AdminLandingPageActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="10dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/recordbook"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="left|center_vertical"
+                android:onClick="btnaction"
+                android:paddingLeft="10dp"
+                android:text="Issue Book"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/listbydate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="left|center_vertical"
+                android:onClick="btnaction"
+                android:paddingLeft="10dp"
+                android:text="List By Date"
+
+                android:textAllCaps="false"
+
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/searchbook"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="left|center_vertical"
+                android:onClick="btnaction"
+                android:paddingLeft="10dp"
+                android:text="Search Book"
+                android:textAllCaps="false"
+
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/returnbook"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="left|center_vertical"
+                android:onClick="btnaction"
+                android:paddingLeft="10dp"
+                android:text="Return Book"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+
+                />
+
+            <Button
+                android:id="@+id/analysisreport"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="left|center_vertical"
+                android:onClick="analysisreport"
+                android:paddingLeft="10dp"
+                android:text="Analysis Reports"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:visibility="gone"
+
+                />
+
+            <Button
+                android:id="@+id/addsingleboook"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="left|center_vertical"
+                android:onClick="addsinglebook"
+                android:paddingLeft="10dp"
+                android:text="Add Single Book"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+
+                />
+
+            <Button
+                android:id="@+id/charts"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="left|center_vertical"
+                android:onClick="showchartsmenu"
+                android:paddingLeft="10dp"
+                android:text="Statistics "
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="left|center_vertical"
+                android:onClick="morebookstakengraph"
+                android:paddingLeft="10dp"
+                android:text="Dates on which more books taken"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                android:textColor="@android:color/white"
+
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="left|center_vertical"
+                android:onClick="userbooks"
+                android:paddingLeft="10dp"
+                android:text="Search Users"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

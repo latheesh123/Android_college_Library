@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="6dip" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/publisher"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brand_danger"
+            android:textSize="20sp"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brand_danger"
+            android:textSize="20sp"
+            android:typeface="sans"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/startdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:maxWidth="145dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/returndate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:maxWidth="145dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:typeface="sans" />
+
+
+        <Button
+            android:id="@+id/deletefavourite"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:background="@color/brand_danger"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/details"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@color/brand_warning"
+                android:paddingLeft="5dp"
+                android:text="Details"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+
+            <ImageButton
+                android:id="@+id/favouritebook"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:paddingLeft="5dp"
+                android:src="@android:drawable/star_big_on"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/bookmark"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@color/colorPrimary"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dp"
+                android:text="Book mark"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/bookmarkdetails"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/colorPrimary"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dp"
+                android:text="Details"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

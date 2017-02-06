@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.library.book" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="security.rest.communication.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity" />
+
+        <service android:name=".GCMNotificationService" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AdminRegisterActivity" />
+        <activity android:name=".UserRegistrationActivity" />
+        <activity android:name=".TokenEntryActivity" />
+        <activity android:name=".AdminLandingPageActivity" />
+        <activity android:name=".UserLandingPageActivity" />
+        <activity
+            android:name=".AdminHomeActivity"
+            android:label="@string/title_activity_admin_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RecordBookActivity" />
+        <activity android:name=".ListByDateActivity" />
+        <activity
+            android:name=".SearchBooksActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".ReturnBookActivity" />
+        <activity android:name=".BookDetailsActivity" />
+        <activity
+            android:name=".UserHomeActivity"
+            android:label="@string/title_activity_user_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".UserRecordBookActivity" />
+        <activity android:name=".MyBooksActivity" />
+        <activity android:name=".FavouriteBooksActivity" />
+        <activity
+            android:name=".QrCodeActivity"
+            android:noHistory="true" />
+        <activity android:name=".ReservedDetailsActivity" />
+        <activity android:name=".BookMarkDetailsActivity" />
+
+        <receiver android:name=".AppAlarmManager" />
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.library.book" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".ChangeEmailActivity" />
+        <activity android:name=".AddSingleBookActivity" />
+        <activity android:name=".GoogleResultsActivity" />
+        <activity android:name=".ChartsMenuActivity" />
+        <activity android:name=".StudentsVsLibrarians" />
+        <activity android:name=".BooksCountChartActivity" />
+        <activity android:name=".BooksTakenCountActivity" />
+        <activity android:name=".BooksLateReturnActivity" >
+        </activity>
+        <activity android:name=".BooksTakenOrderActivity" >
+        </activity>
+        <activity android:name=".UserBooksActivity" >
+        </activity>
+    </application>
+
+</manifest>

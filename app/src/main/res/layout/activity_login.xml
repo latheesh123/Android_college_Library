@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.library.book.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:padding="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="@dimen/abc_edit_text_inset_top_material"
+                android:background="@drawable/rounded_edit_text"
+                android:focusable="true"
+                android:hint="Email"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:typeface="sans" />
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="@dimen/abc_edit_text_inset_top_material"
+                android:background="@drawable/rounded_edit_text"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:typeface="sans" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounded_button"
+                    android:onClick="btn_Login"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Login"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/brand_success"
+                android:onClick="btn_adminReg"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Librarian Registration"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:typeface="sans" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/brand_warning"
+                android:onClick="btn_userReg"
+                android:paddingLeft="20dp"
+                android:textAllCaps="false"
+                android:paddingRight="20dp"
+                android:text="User Registration"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:typeface="sans" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

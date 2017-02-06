@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.library.book.UserRegistrationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:padding="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="@dimen/abc_edit_text_inset_top_material"
+                android:background="@drawable/rounded_edit_text"
+                android:focusable="true"
+                android:hint="User Name"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:text=""
+                android:textColor="#000000"
+                android:typeface="sans" />
+
+
+            <EditText
+                android:id="@+id/studentid"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="@dimen/abc_edit_text_inset_top_material"
+                android:background="@drawable/rounded_edit_text"
+                android:hint="Student id"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="@dimen/abc_edit_text_inset_top_material"
+                android:background="@drawable/rounded_edit_text"
+                android:hint="Email id"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="@dimen/abc_edit_text_inset_top_material"
+                android:background="@drawable/rounded_edit_text"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:typeface="sans" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounded_button"
+                    android:onClick="btn_register"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Register"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:typeface="sans" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
