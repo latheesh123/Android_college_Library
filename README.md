@@ -5,3 +5,9 @@ This is an Institution Library Application Android Application which cover all t
 This Android Application Has an unique Feature such as It can be Used in many Instutions with the change of the AWS database
 
 This application together Called a basic template for the Institutions Library Systems
+
+
+Any Universities and other institutions can use this code by creating their own application for their purposes By changing the remote connections and other calls to the server 
+
+
+Conact me at latheeshv90@gmail.com for the details of code working 
