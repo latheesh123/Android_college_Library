@@ -10,4 +10,17 @@ This application together Called a basic template for the Institutions Library S
 Any Universities and other institutions can use this code by creating their own application for their purposes By changing the remote connections and other calls to the server 
 
 
+
+Zxing Library
+
+GSON
+
+Material Tabs
+
+Zbar Barcode Scanner
+
+Picasso
+
+MPAndroid Charts
+
 Conact me at latheeshv90@gmail.com for the details of code working 
