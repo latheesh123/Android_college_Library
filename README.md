@@ -6,6 +6,13 @@ This Android Application Has an unique Feature such as It can be Used in many In
 
 This application together Called a basic template for the Institutions Library Systems
 
+For Functionalties Refer
+UserFeatures
+https://www.youtube.com/watch?v=Nbv8SEfBK6I
+
+Admin Features:
+https://www.youtube.com/watch?v=X9AjplOOG8E
+
 
 Any Universities and other institutions can use this code by creating their own application for their purposes By changing the remote connections and other calls to the server 
 
