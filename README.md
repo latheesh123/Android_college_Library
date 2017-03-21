@@ -23,4 +23,7 @@ Picasso
 
 MPAndroid Charts
 
+
+Duration for the Project 6 months
+
 Conact me at latheeshv90@gmail.com for the details of code working 
